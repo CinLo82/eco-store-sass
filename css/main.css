@@ -27,6 +27,9 @@ nav .icons button {
   background: none;
   border-style: none;
 }
+nav .icon-menu {
+  display: none;
+}
 
 article {
   color: #7C6A0A;
@@ -190,6 +193,9 @@ section .forniture .product-card {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.location .map img {
+  width: 90vw;
+}
 
 footer {
   background-color: #FA9500;
@@ -204,4 +210,75 @@ footer .social-icons {
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+
+@media (max-width: 520px) {
+  nav .icon-menu {
+    display: flex;
+    width: 36px;
+    height: 36px;
+  }
+  nav .icons {
+    display: none;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  article .impact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  article button {
+    width: auto;
+  }
+  article img {
+    padding-top: 30px;
+    width: 50vw;
+  }
+  section .healthcare .card-section .product-card, section .forniture .card-section .product-card {
+    width: 200px;
+    height: auto;
+  }
+  section .healthcare .card-section .product-card img, section .forniture .card-section .product-card img {
+    width: 70%;
+  }
+  .about-us .mission-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .about-us .mission-section .earth, .about-us .mission-section .innovation {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .galery .galery-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .galery .galery-images img {
+    width: 50vw;
+    height: 45vh;
+  }
+  .location .map img {
+    width: 90vw;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */

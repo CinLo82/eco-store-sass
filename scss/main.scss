@@ -43,6 +43,9 @@ nav {
         gap: 15px;
         @include buttonStyle;
     }
+    .icon-menu{
+        display: none;
+    }
 }
 
 article {
@@ -195,6 +198,9 @@ section{
         @include flexCenter(row, center, center);
         padding-top: 60px;
         padding-bottom: 60px;
+        img{
+            width: 90vw;
+        }
     }
 }
 
@@ -209,3 +215,83 @@ footer {
         gap: 40px;
     }
 }
+
+
+@media screen and(max-width: 520px){
+    nav{
+        .icon-menu{
+            display: flex;
+            width: 36px;
+            height: 36px;
+        }
+        .icons{
+            display: none;
+        } 
+    }
+
+    article{
+        @include flexCenter(column, center, center);
+        .impact-section{
+            @include flexCenter(column, center, center);
+        font-size: 12px ;
+        }
+        button{
+            width: auto;
+        }
+        img{
+            padding-top: 30px;
+            width: 50vw;
+        }
+    }
+
+    section{
+        .healthcare{
+            .card-section{
+                .product-card{
+                    width: 200px;
+                    height: auto;
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us{
+        .mission-section{
+            @include flexCenter(column, center, center );
+            gap: 20px;
+            .earth{
+                width: 50vw;
+                @include flexCenter(column, center, center );
+            }
+        }
+    }
+
+    .galery{
+        .galery-images{
+            @include flexCenter(column, center, center);
+            gap: 20px;
+            img{
+                width: 50vw;
+                height: 45vh;
+            }
+        }
+    }
+
+    .location{
+        .map{
+            img{
+                width: 90vw;
+            }
+        }
+    }
+    footer {
+        @include flexCenter(column, center,center);
+
+    }
+    
+
+}
+
